@@ -1,0 +1,78 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+}
+
+.wrapper {
+  padding: 30px;
+  margin: 80px auto;
+  box-shadow: 5px 5px 5px 5px #aaa;
+  width: 40%;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+}
+
+.title {
+  font-family: "Times New Roman", Times, serif;
+}
+
+.fa-rotate {
+  color: rgb(0, 0, 0);
+}
+
+#input {
+  font-family: "Times New Roman", Times, serif;
+  border: 2px solid rgb(0, 0, 0);
+  width: 100%;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  border-top: 2px solid #aaa;
+}
+
+.check-mark {
+  display: flex;
+  align-items: center;
+}
+
+.scratch {
+  text-decoration: line-through;
+  color: rgb(0, 0, 0);
+}
+
+.descrip {
+  padding-left: 25px;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.list-wrapper button {
+  align-self: flex-end;
+}
+
+.ellip {
+  outline: none;
+  width: 40px;
+  height: 40px;
+  border: none;
+  background: rgb(0, 0, 0);
+  cursor: pointer;
+}
+
+.delete {
+  width: 100%;
+  color: rgb(0, 0, 0);
+}
