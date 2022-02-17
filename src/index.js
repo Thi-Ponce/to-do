@@ -1,41 +1,17 @@
 import './style.css';
+import { createList } from '../modules/create.js';
+import { addItem } from '../modules/add.js';
+import clearAll from '../modules/clearAll.js';
 
-const toDos = [
-	{
-		index: 0,
-		completed: false,
-		description: 'Finish homework',
-	},
-];
+let tasks = [];
 
-const listWrapper = document.querySelector('.list-wrapper');
-
-const makeRow = (task) => {
-  const row = `
-  <div class="check-mark">
-    <input type="checkbox" id="status-${task.index}" ${
-  task.completed ? 'checked' : ''
-}>
-    <p class="descrip ${task.completed ? 'scratch' : ''}">${
-  task.description
-}</p>
-  </div>
-  <button class="ellip">
-  <i class="fa-solid fa-ellipsis-vertical"></i>
-  </button>`;
-  return row;
+const getLocalData = () => {
+  if (localStorage.getItem('localData')) {
+    tasks = JSON.parse(localStorage.localData);
+  }
 };
 
-listWrapper.appendChild(makeRow);
-
-const addList = (task) => {
-  const row = document.createElement('div');
-  row.classList.add('row');
-  const insertRow = makeRow(task);
-  task.innerHTML = insertRow;
-  task.appendChild(row);
-};
-
-toDos.forEach((task) => {
-  addList(task);
-});
+getLocalData();
+createList(tasks);
+addItem(tasks);
+clearAll(tasks);
