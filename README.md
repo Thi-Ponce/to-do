@@ -2,7 +2,7 @@
 
 # To-Do List
 
-> This is a simple To-Do list page I made following the requirements from Microverse.
+> This is a simple To-Do list page I made following the requirements from Microverse. You can check it out here: https://thi-ponce.github.io/to-do/
 
 
 ## Built With
