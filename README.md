@@ -4,6 +4,7 @@
 
 > This is a simple To-Do list page I made following the requirements from Microverse. You can check it out here: https://thi-ponce.github.io/to-do/
 
+![To Do List](E:\Udemy\Microverse\Module 2\Week 2\to-do\screenshot-todo.jpeg)
 
 ## Built With
 
@@ -21,11 +22,9 @@
 - Twitter: [@Thi_ponce](https://twitter.com/Thi_ponce)
 - LinkedIn: [LinkedIn](https://linkedin.com/in/thiago-ponce)
 
-
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
-
 
 ## Show your support
 
